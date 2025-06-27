@@ -26,12 +26,14 @@ export default function App() {
   );
 }
 
+console.log(<DifferentContent />);
+
 function Tabbed({ content }) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div>
-      <div className="tabs">
+      <div className="flex mb-2">
         <Tab num={0} activeTab={activeTab} onClick={setActiveTab} />
         <Tab num={1} activeTab={activeTab} onClick={setActiveTab} />
         <Tab num={2} activeTab={activeTab} onClick={setActiveTab} />
@@ -43,6 +45,8 @@ function Tabbed({ content }) {
       ) : (
         <DifferentContent />
       )}
+
+      {/* {TabContent({ item: content.at(0) })}  */}
     </div>
   );
 }
@@ -50,7 +54,9 @@ function Tabbed({ content }) {
 function Tab({ num, activeTab, onClick }) {
   return (
     <button
-      className={activeTab === num ? "tab active" : "tab"}
+      className={
+        "items-center justify-between rounded-lg bg-blue-600 py-3 px-6 mr-2 font-bold text-white hover:text-white transition-all hover:scale-105"
+      }
       onClick={() => onClick(num)}
     >
       Tab {num + 1}
@@ -67,8 +73,8 @@ function TabContent({ item }) {
   }
 
   return (
-    <div className="tab-content">
-      <h4>{item.summary}</h4>
+    <div className="bg-blue-50 p-10 rounded-xl">
+      <h4 className="text-2xl mb-4 text-blue-500">{item.summary}</h4>
       {showDetails && <p>{item.details}</p>}
 
       <div className="tab-actions">
