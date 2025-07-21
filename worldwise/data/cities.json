@@ -1,27 +1,27 @@
 {
   "cities": [
     {
-      "id": "9591",
-      "cityName": "Monteaux",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-07-20T14:24:54.037Z",
+      "id": "248f",
+      "cityName": "Requejo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-07-21T01:39:52.818Z",
       "notes": "asd",
       "position": {
-        "lat": "47.48751300895658",
-        "lng": "1.1206054687500002"
+        "lat": "42.032974332441405",
+        "lng": "-6.791480896202326"
       }
     },
     {
-      "id": "5347",
-      "cityName": "Retuerta del Bullaque",
+      "id": "6d06",
+      "cityName": "Piedrabuena",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2025-07-20T14:25:08.265Z",
+      "date": "2025-07-21T01:41:01.863Z",
       "notes": "asd",
       "position": {
-        "lat": "39.57182223734374",
-        "lng": "-4.064941406250001"
+        "lat": "39.18117526158749",
+        "lng": "-4.441005292814364"
       }
     }
   ]
